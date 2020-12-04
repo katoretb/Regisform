@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("https://images.hdqwalls.com/download/eyes-to-the-skies-4k-yj-1920x1080.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                color: #fff;
+            }
+            form {
+                margin-top: 10%;
+                border-radius: 15px;
+                border: 5px solid #fff;
+                width: 30%;
+            }
+            .input {
+                border-radius: 10px;
+                border: 3px solid #fff;
+                color:white;
+                width: 60%;
+                background-color: transparent;
+                text-align: center;
+            }
+            .input:focus {
+                border: 3px solid #000;
+            }
+            .input:hover {
+                border: 3px solid #000;
+            }
+            ::placeholder {
+              color: #bfbfbf;
+            }
+            .submit {
+                border-radius: 10px;
+                border: 3px solid #8fff8f;
+                color: #8fff8f;
+                width: 30%;
+                background-color: transparent;
+                text-align: center;
+            }
+            .submit:hover {
+                border: 3px solid #5ccc5c;
+                background-color: #5ccc5c;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form>
+                <h1>Register</h1>
+                <input class="input" type="text" name="username" placeholder="Username"><br><br>
+                <input class="input" type="text" name="Email" placeholder="Email"><br><br>
+                <input class="input" type="password" name="password" placeholder="Passwod" id="pass"><br><br>
+                <input class="input" type="password" name="confirmpassword" placeholder="Confirm password" id="pass"><br><br>
+                <input type="checkbox" onclick="showpass()"> Show password<br><br>
+                <input class="submit" type="submit"><br><br>
+            </form>
+        </center>
+    </body>
+</html>
+<script>
+    function showpass() {
+      if (document.getElementById("pass").type == "password") {
+        document.getElementById("pass").type = "text";
+      } else {
+        document.getElementById("pass").type = "password";
+      }
+    }
+</script>
